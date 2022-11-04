@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video_prueba{
+    opacity: 90%;
+}
+
+.video_prueba h1{
+    margin: 0;
+    color: white;
+}
+.video{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.video video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -1000;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login img{
+    width: 200px;
+    height: auto;
+}
+.login_input{
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login_input h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+.login_input label{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin: 0;
+}
+
+.login_input label:last-of-type{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login_input input{
+    margin: 0 0 20px 0;
+}
+
+.login_input button{
+    background-color: #d62828;
+    border: none;
+    height: 30px;
+    color: white;
+    width: 135px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.login_input button:hover{
+    opacity: 70%;
+    transition: opacity 0.5s;
+}
+
+.login_input a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.login_input input{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#alert{
+    display: none;
+    margin: 0;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+
+}
