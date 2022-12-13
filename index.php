@@ -1,3 +1,14 @@
+<?php
+    
+	include("conexion.php");
+	session_start();
+
+    
+	
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,21 +40,42 @@
         <img src="img/Mi proyecto (1).png" alt="">
         <ul class="nav">
             <li><a href="">Nuevos Lanzamientos</a></li>
-            <li><a href="">Hombre</a></li>
+            <li><a href="tenis.html">Hombre</a></li>
             <li><a href="">Mujer</a></li>
             <li><a href="">Niño</a></li>
             <a href=""><img src="img/bolsa-de-la-compra.png" alt=""></a>
-            <a href="login.html"><img src="img/perfil.png" alt=""></a>
+
+            <?php
+                if(isset($_SESSION['username'])){
+                    
+                
+            ?>
+                <a href="#" onclick="display();" ><img src="img/perfil.png" alt=""></a>
+
+            <?php
+                
+                }else{
+
+                
+            ?>
+                <a href="login.php?error=0"><img src="img/perfil.png" alt=""></a>
+
+            <?php
+                }
+            ?>
             
         </ul>
 
         
-    </div>
-
-        
-        
     </nav>
+
     <body>
+        <div class="user" id="display">
+            <p>Bienvenido, <?php echo $_SESSION['name']; ?></p>
+            <a href="miCuenta.php">Mi cuenta</a>
+            <a href="">Favoritos</a>        
+            <a href="cerrar_sesion.php">Cerrar Sesion</a>        
+        </div>
         <div class="body_img">
             <div class="body_txt">
                 <img src="img/Mi proyecto (1).png" alt="">
@@ -207,24 +239,46 @@
         </div>
 
         <footer>
-            <div class="footer">
-                <div class="footer_links">
-                    <p>GAV Sneakers</p>
-                    <a href="">Acerca de Nosotros</a>
-                    <a href="">Ayuda</a>
+            <div class="footer_p">
+                <div class="footer">
+                    <div class="footer_links">
+                        <p>GAV Sneakers</p>
+                        <a href="">Acerca de Nosotros</a>
+                        <a href="">Ayuda</a>
+                    </div>
+                    <div class="footer_links">
+                        <p>Ayuda</p>
+                        <a href="">Preguntas Frecuentes</a>
+                        <a href="">Promociones</a>
+                    </div>
+                    <div class="footer_links">
+                        <p>Servicio al cliente</p>
+                        <a href="">Contacto</a>
+                    </div>
+                    
                 </div>
-                <div class="footer_redes">
-                    <img src="img/instagram.png" alt="">
-                    <img src="img/facebook.png" alt="">
-                    <img src="img/gorjeo.png" alt="">
-                </div>
+    
+                
             </div>
 
-            <p>©Todos los derechos reservados 2022</p>
+            <div class="avisos">
+                <div class="priv">
+                    <img src="img/Mi proyecto (1).png" alt="" height="100" width="100">
+                    <a href="terminos.html">Terminos de Uso</a>
+                    <a href="priv.html">Aviso de Privacidad</a>
+                    <a href="cookies.html">Politica de Cookies</a>
+                </div>
+                <div class="pagos">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Paypal.png" alt="" width="50" height="25">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/2560px-Oxxo_Logo.svg.png" alt="" width="50" height="25">
+                    <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/brand-history/brandhistory_mc1996_100_2x.png" alt=""  width="50" height="25">
+                </div>
+            </div>
             
         </footer>
 
 
     </body>
 </body>
+<script src="js/index.js"></script>
 </html>

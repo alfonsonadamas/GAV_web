@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tenis.css">
+    <link rel="shortcut icon" href="img/Mi proyecto (1).png" type="image/x-icon">
+    <title>Sitio Web Oficial de GAV Sneakers</title>
+</head>
+<body>
+    <!-- <header>
+        <div class="header">
+            <div class="header_img">
+                <a href=""><img src="img/Jumpman_logo.svg.png" alt=""></a>
+                <a href=""><img src="img/Adidas_Logo.svg.png" alt=""></a>
+                <a href=""><img src="img/puma-se-logo-ACC0F72575-seeklogo.com.png" alt=""></a>
+            </div>
+            <ul class="header_nav">
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Unete</a></li>
+                <li><a href="">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+    </header> -->
+    <nav>
+       
+        <a href="index.html"><img src="img/Mi proyecto (1).png" alt=""></a>
+        <ul class="nav">
+            <li><a href="">Nuevos Lanzamientos</a></li>
+            <li><a href="tenis.html">Hombre</a></li>
+            <li><a href="">Mujer</a></li>
+            <li><a href="">Niño</a></li>
+            <a href=""><img src="img/bolsa-de-la-compra.png" alt=""></a>
+            <a href="login.html"><img src="img/perfil.png" alt=""></a>
+            
+        </ul>
+
+        
+    </nav>
+
+    <div class="hero" style="background-image: url('https://site.innvictus.com/ux/cx/iv/genero/hombres/iv-landing-hombres-banner-principal-1up.jpg');">
+        
+    </div>
+
+    <div class="titulo">
+        <p>Hombres</p>
+        <h2>Arma tu mejor oufit </h2>
+        <p>con las mejores marcas</p>
+    </div>
+
+    <div class="marcas">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_adidas-brand___d10f1639d61f30a165744b0fdcaaf895.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_nike-brand___0ff792e4232d0d76f7d17cc07437552d.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_vans-brand___f9502922ce96d15c857efe53ee7789d1.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_puma-brand___a926929ba1cc7292dc5a8b46e0dc7b00.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_reebok-brand___3814bde3230562b8ac58b39e42aa816c.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_jordan-brand___43c2631a31096075a686b0e892ecffb1.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_converse-brand___720689fe4b49809789ef8c4d52bc445b.svg" alt="" width="70" height="90">
+        <img src="https://tafmx.vtexassets.com/assets/vtex/assets-builder/tafmx.resilient-theme/1.6.6/layout/images_fila-brand___b74d932e604600c9f52bb04976eceeb8.svg" alt="" width="70" height="90">
+    </div>
+
+    <div class="categorias">
+        <a href="">Calzado</a>
+        <a href="">Ropa</a>
+        <a href="">Accesorios</a>
+    </div>
+    <h2>Calzado de Hombre</h2>
+    <div class="productos">
+        
+        <div class="formularios">
+            <div class="filtros">
+                <button onclick="ocultar1();">Marca <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="" width="15" height="15"></button>
+                <form action="" class="form_filtros" id="fomr_1">
+                   
+                    <div class="inputs">
+                        <input type="checkbox" name="nike">
+                        <label for="nike">Nike</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="adidas">
+                        <label for="adidas">Adidas</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="puma">
+                        <label for="puma">Puma</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="Jordan">
+                        <label for="jordan">Jordan</label>
+                    </div>
+                
+                </form>
+            </div>
+            <div class="filtros" >
+                <button onclick="ocultar2();">Talla <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="" width="15" height="15"></button>
+                <form action="" class="form_filtros" id="fomr_2">
+                    <div class="inputs">
+                        <input type="checkbox" name="26">
+                        <label for="26">26</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="27">
+                        <label for="27">27</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="28">
+                        <label for="28">28</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="29">
+                        <label for="29">29</label>
+                    </div>
+                </form>
+            </div>
+            <div class="filtros">
+                <button onclick="ocultar3();">Precio <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" alt="" width="15" height="15"></button>
+                <form action="" class="form_filtros" id="fomr_3">
+                    <div class="inputs">
+                        <input type="checkbox" name="precio_10">
+                        <label for="precio_10">$1000 - $1500</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="precio_20">
+                        <label for="precio_20">$1500 - $2000</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="precio_25">
+                        <label for="precio_25">$2000 - $2500</label>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="checkbox" name="precio_30">
+                        <label for="precio_30">$2500 - $3000</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tenis">
+            <div class="teni">
+                <img src="https://tafmx.vtexassets.com/arquivos/ids/388928-398-512?v=638012727134400000&width=398&height=512&aspect=true" alt="" width="300" height="350">
+                <h3>TENIS NIKE AIR MAX 90</h3>
+                <p class="nombre_teni"><span>Nike</span> - Hombre</p>
+                <p>$2799</p>
+            </div>
+            <div class="teni">
+                <img src="https://tafmx.vtexassets.com/arquivos/ids/388928-398-512?v=638012727134400000&width=398&height=512&aspect=true" alt="" width="300" height="350">
+                <h3>TENIS NIKE AIR MAX 90</h3>
+                <p class="nombre_teni"><span>Nike</span> - Hombre</p>
+                <p>$2799</p>
+            </div>
+            <div class="teni">
+                <img src="https://tafmx.vtexassets.com/arquivos/ids/388928-398-512?v=638012727134400000&width=398&height=512&aspect=true" alt="" width="300" height="350">
+                <h3>TENIS NIKE AIR MAX 90</h3>
+                <p class="nombre_teni"><span>Nike</span> - Hombre</p>
+                <p>$2799</p>
+            </div>
+            <div class="teni">
+                <img src="https://tafmx.vtexassets.com/arquivos/ids/388928-398-512?v=638012727134400000&width=398&height=512&aspect=true" alt="" width="300" height="350">
+                <h3>TENIS NIKE AIR MAX 90</h3>
+                <p class="nombre_teni"><span>Nike</span> - Hombre</p>
+                <p>$2799</p>
+            </div>
+            <div class="teni">
+                <img src="https://tafmx.vtexassets.com/arquivos/ids/388928-398-512?v=638012727134400000&width=398&height=512&aspect=true" alt="" width="300" height="350">
+                <h3>TENIS NIKE AIR MAX 90</h3>
+                <p class="nombre_teni"><span>Nike</span> - Hombre</p>
+                <p>$2799</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer_p">
+            <div class="footer">
+                <div class="footer_links">
+                    <p>GAV Sneakers</p>
+                    <a href="">Acerca de Nosotros</a>
+                    <a href="">Ayuda</a>
+                </div>
+                <div class="footer_links">
+                    <p>Ayuda</p>
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Promociones</a>
+                </div>
+                <div class="footer_links">
+                    <p>Servicio al cliente</p>
+                    <a href="">Contacto</a>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        
+
+        <div class="avisos">
+            <div class="priv">
+                <img src="img/Mi proyecto (1).png" alt="" height="100" width="100">
+                <a href="terminos.html">Terminos de Uso</a>
+                <a href="priv.html">Aviso de Privacidad</a>
+                <a href="cookies.html">Politica de Cookies</a>
+            </div>
+            <div class="pagos">
+                <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Paypal.png" alt="" width="50" height="25">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Oxxo_Logo.svg/2560px-Oxxo_Logo.svg.png" alt="" width="50" height="25">
+                <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/brand-history/brandhistory_mc1996_100_2x.png" alt=""  width="50" height="25">
+            </div>
+        </div>
+        
+    </footer>
+
+
+    </body>
+    <script src="js/index.js"></script>
+</html>

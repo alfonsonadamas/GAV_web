@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.terminos{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminos h2{
+    text-align: start;
+}
+
+.terminos p{
+    text-align: start;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.terminos h3{
+    text-align: start;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
